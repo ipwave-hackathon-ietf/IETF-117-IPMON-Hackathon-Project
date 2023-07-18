@@ -14,7 +14,8 @@ To run this project follow these steps:
     (b) Secondary, impoort the CANA-IETF-117  into your work space. ight click the project, choose Project References, tick the inet and simu5G, and click apply and close.
         Build the project by Right clicking the inet project and cclicking the Build Project or Pressing the Ctrl + B.
 
-        Now your proct is ready!
+        Now your project is ready!
+        
 (3) Run the Hackathon project by entering CANA-IETF-117 > simu5gdrone > right click the omnetpp.ini > Run as > OMNeT++ Simulation.
 
 Enjoy our simulation!
