@@ -1,0 +1,87 @@
+version 2
+run CANA-0-20230718-17:49:45-823742
+attr configname CANA
+attr datetime 20230718-17:49:45
+attr experiment CANA
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network cana.simulations.simu5gdrone.fanet5g
+attr processid 823742
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.numdst 6
+param **.dst*.mobility.typename "\"stationaryNodeMob\""
+param **.dst[0].mobility.initialX 300m
+param **.dst[0].mobility.initialY 100m
+param **.dst[0].mobility.initialZ 0m
+param **.dst[1].mobility.initialX 200m
+param **.dst[1].mobility.initialY 250m
+param **.dst[1].mobility.initialZ 0m
+param **.dst[2].mobility.initialX 360m
+param **.dst[2].mobility.initialY 220m
+param **.dst[2].mobility.initialZ 0m
+param **.dst[3].mobility.initialX 300m
+param **.dst[3].mobility.initialY 330m
+param **.dst[3].mobility.initialZ 0m
+param **.dst[4].mobility.initialX 500m
+param **.dst[4].mobility.initialY 300m
+param **.dst[4].mobility.initialZ 0m
+param **.dst[5].mobility.initialX 500m
+param **.dst[5].mobility.initialY 200m
+param **.dst[5].mobility.initialZ 0m
+param **.dst[*].mobility.initFromDisplayString false
+param **.bstion*.mobility.typename "\"stationaryNodeMob\""
+param **.bstion[0].mobility.initialX 300m
+param **.bstion[0].mobility.initialY 20m
+param **.bstion[0].mobility.initialZ 0m
+param **.bstion[*].mobility.initFromDisplayString false
+param *.dronesnumber 10
+param *.missionid intuniform(1,4)
+param *.penetrationrate 0.4
+param *.drone*.mobility.typename "\"DroneNetMob\""
+param *.drone*.mobility.initFromDisplayString false
+param *.drone*.mobility.changeInterval 1s
+param *.drone[*].mobility.initialMovementHeading "uniform(0deg, 360deg)"
+param *.drone[*].mobility.initialMovementElevation "uniform(-90deg, 90deg)"
+param *.drone*.mobility.angleDelta "normal(0deg, 30deg)"
+param *.drone[*].mobility.rotationAxisAngle uniform(-10deg,10deg)
+param *.drone*.mobility.speed "truncnormal(15mps, 5mps)"
+param *.drone[*].mobility.initFromDisplayString false
+param *.host[*].mobility.faceForward false
+param **.routingRecorder.enabled false
+param **.constraintAreaMinX 0m
+param **.constraintAreaMinY 0m
+param **.constraintAreaMinZ 0m
+param **.constraintAreaMaxX 1000m
+param **.constraintAreaMaxY 1000m
+param **.constraintAreaMaxZ 200m
+param **.updateInterval 0.1s
+param **.numBands 25
+param **.ueTxPower 26
+param **.eNodeBTxPower 46
+param *.drone[*].cellularNic.phy.dynamicCellAssociation true
+param **.drone[*].masterId 1
+param **.drone[*].macCellId 1
+param **.gNodeB1.macCellId 1
+param **.gNodeB1.macNodeId 1
+param **.gNodeB2.macCellId 2
+param **.gNodeB2.macNodeId 2
+param *.drone[*].cellularNic.phy.enableHandover true
+param *.gNodeB*.cellularNic.phy.enableHandover true
+param *.gNodeB*.cellularNic.phy.handoverLatency 50ms
+param *.gNodeB*.cellInfo.broadcastMessageInterval 1s
+param *.gNodeB*.numX2Apps 1
+param *.gNodeB*.x2App[*].server.localPort "5000 + ancestorIndex(1)"
+param *.gNodeB1.x2App[0].client.connectAddress "\"gNodeB2%x2ppp0\""
+param *.gNodeB2.x2App[0].client.connectAddress "\"gNodeB1%x2ppp0\""
+param **.sctp.nagleEnabled false
+param **.sctp.enableHeartbeats false
+
+scalar fanet5g.gNodeB1.x2App[0].client ums 1452
+scalar fanet5g.gNodeB2.x2App[0].client ums 1452
+
