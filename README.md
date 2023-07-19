@@ -12,13 +12,13 @@ To run this project follow these steps:
     - It contains two projects: SIMU5G which is the 5G simulation and CANA-IETF-117 which is a flying ad hoc network simulation.
     
     (a) First, import the SIMU5G into your workspace. Right-click the project, choose Project References, tick the inet, click apply and close.
-        Build the project by Right-clicking the inet project and cclicking the Build Project or pressing the Ctrl + B.
-    (b) Secondary, import the CANA-IETF-117  into your workspace. right click the project, choose Project References, tick the inet and simu5G, and click apply and close.
-        Build the project by Right-clicking the inet project and clicking the Build Project or pressing the Ctrl + B.
+        Build the project by right-clicking the inet project and clicking the Build Project or pressing the Ctrl + B.
+    (b) Secondary, import the CANA-IETF-117  into your workspace. Right-click the project, choose Project References, tick the inet and simu5G, and click apply and close.
+        Build the project by right-clicking the inet project and clicking the Build Project or pressing the Ctrl + B.
 
         Now your project is ready!
         
-(3) Run the Hackathon project by entering CANA-IETF-117 > simu5gdrone > right click the omnetpp.ini > Run as > OMNeT++ Simulation.
+(3) Run the Hackathon project by entering CANA-IETF-117 > simu5gdrone > right-click the omnetpp.ini > Run as > OMNeT++ Simulation.
 
 Enjoy our simulation!
 
