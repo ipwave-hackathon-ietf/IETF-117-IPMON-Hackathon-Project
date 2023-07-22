@@ -33,7 +33,8 @@ network fanet5g extends DroneScenario5g
     parameters:
 //        int numExtCells = default(0);
 		int numdst;
-        @display("i=block/network2;bgb=991,558;bgi=background/budapest");
+		@display("i=block/network2;bgb=991,558");
+//        @display("i=block/network2;bgb=991,558;bgi=background/budapest");
     submodules:
         routingRecorder: RoutingTableRecorder {
             @display("p=50,75;is=s");

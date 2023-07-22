@@ -29,7 +29,6 @@ struct parcel{
     double exp_time;
     Coord parceldest;
 };
-//std::vector<voxel> CubicStructure;
 
 void parcelsDefinition (int nparcels);
 
